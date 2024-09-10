@@ -122,3 +122,39 @@
     text-align: center;
     padding: 20px;
 }
+
+.jsonList {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+}
+
+.jsonList li {
+    margin-bottom: 8px;
+}
+
+.jsonList strong {
+    font-weight: bold;
+}
+
+/* Info.module.css */
+
+.exportContainer {
+    display: flex;
+}
+
+.exportContainer .ms-Button {
+    margin-right: 20px; /* Space between the text and the button */
+}
+
+.responseContainer {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between the text and the button */
+}
+
+.uploadS {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 800px;
+}

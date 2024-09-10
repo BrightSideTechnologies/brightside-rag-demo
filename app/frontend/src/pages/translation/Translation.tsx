@@ -2,6 +2,8 @@ import { useState, FormEvent, ChangeEvent } from "react";
 import { DefaultButton, Dropdown, IDropdownOption } from "@fluentui/react";
 import styles from "./Translation.module.css";
 import { TranslationLoading } from "../../components/Answer";
+import github from "../../assets/ESTIMATE.pdf";
+import translated from "../../assets/translated.pdf";
 
 // Data parsing and filtering
 const languagesData = [
@@ -116,6 +118,10 @@ export function Component(): JSX.Element {
         <div className={styles.container}>
             <div className={styles.header}>
                 <h1 className={styles.title}>Translation</h1>
+                <p className={styles.uploadS}>
+                    Our app offers real-time, in-place translation for seamless, context-aware language conversion. It integrates effortlessly into your
+                    workflow, supports multiple languages, and boosts global communication efficiency.
+                </p>
             </div>
             <div>
                 <form onSubmit={handleSubmit} className={styles.uploadSection}>

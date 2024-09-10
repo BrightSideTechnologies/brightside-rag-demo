@@ -29,6 +29,13 @@
     padding: 10px;
 }
 
+.uploadS {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 800px;
+}
+
 .uploadSection {
     margin-left: auto;
     margin-right: auto;
