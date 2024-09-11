@@ -15,7 +15,7 @@ export function Component(): JSX.Element {
     const [showPreview, setShowPreview] = useState<boolean>(false);
     const [fileUploaded, setFileUploaded] = useState<boolean>(false); // State to track if file is uploaded
 
-    const invoice_data = {
+    const invoice_data: { [key: string]: string | number } = {
         invoice_no: "QAP321316",
         vat_no: "PL12313",
         country: "Cayman Islands",
@@ -166,7 +166,9 @@ export function Component(): JSX.Element {
             {!fileUploaded && ( // Render only if no file is uploaded
                 <div className={styles.row}>
                     <div className={styles.column}>
-                        <img src={github} alt="Predefined Invoice" className={styles.invoiceImage} />
+                        <div className={styles.uploadSection1}>
+                            <img src={github} alt="Predefined Invoice" className={styles.invoiceImage} />
+                        </div>
                     </div>
                     <div className={styles.column}>
                         <div className={styles.uploadSection1}>
